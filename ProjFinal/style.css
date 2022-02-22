@@ -1,0 +1,7 @@
+
+
+  body {
+    border: solid #000 1px;
+    background-image: linear-gradient(180deg, #4fffdc, #3FCCB0, #3d8577, rgb(2, 66, 45));
+    background-attachment: fixed;
+  }
