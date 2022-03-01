@@ -1,0 +1,12 @@
+body {
+  border: solid black 1px;
+}
+
+#barra_acessibilidade {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+

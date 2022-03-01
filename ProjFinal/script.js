@@ -1,4 +1,4 @@
-//alert("Olá, investidor!");
+alert("Olá, investidor!");
 
 //document.write('Olá sala');
 

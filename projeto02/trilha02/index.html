@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário</title>
+    <script src="js/formulario.js"></script>
+
     <link
       rel="shortcut icon"
       href="imagens/logo-triangulos-coloridos30.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -21,7 +24,7 @@
     <div class="container mx-auto bg-light mt-1 w-90">
       <header class="row d-flex align-items-center">
         <!-- oculte a barra de acessibilidade -->
-        <div id="barra_acessibilidade" class="col-12 d-none">
+        <div id="barra_acessibilidade" class="col-12">
           <ul id="atalhos">
             <li><a href="#menu" accesskey="1">Ir para menu [1]</a></li>
             <li>
@@ -42,13 +45,13 @@
           <h1>Empresa XPTO</h1>
         </div>
       </header>
-      <hr/>
+      <hr />
       <main class="row">
         <section class="col">
           <div>
             <!-- oculte o header abaixo 
             consulte https://getbootstrap.com.br/docs/4.1/utilities/display/ -->
-            <h2 id="menu" class="d-none">Menu</h2>
+            <h2 id="menu">Menu</h2>
           </div>
           <div class="col-sm-flex d-sm-flex justify-content-sm-center">
             <!-- torne o menu responsivo, conforme o exemplo
@@ -80,53 +83,68 @@
           <article class="col-flex">
             <h2 id="formulario">Formulário de Contato</h2>
             <!-- torne o formulário responsivo, conforme o exemplo consulte https://getbootstrap.com.br/docs/4.1/components/forms/ -->
-            <form action="#" method="post">
+            <form class="needs-validation" novalidate>
               <div class="form-group row">
                 <label
-                  for="nome"
+                  for="validationCuston01"
                   class="col-sm-2 col-form-label col-form-label-sm"
-                  >Nome</label
+                  >Nome*</label
                 >
                 <div class="col-sm-10">
                   <input
                     type="text"
                     class="form-control form-control-sm"
-                    id="nome"
+                    id="validationCuston01"
                     placeholder="Digite seu nome"
-                  />
+                    required/>
+                    <div class="invalid-feedback">Campo nome obrigatório!</div>
                 </div>
               </div>
               <div class="form-group row">
                 <label
-                  for="email"
+                  for="validationCuston02"
+                  name="email"
                   class="col-sm-2 col-form-label col-form-label-sm"
-                  >E-mail</label
+                  >E-mail*</label
                 >
                 <div class="col-sm-10">
                   <input
                     type="email"
                     class="form-control form-control-sm"
-                    id="email"
+                    id="validationCuston02"
                     placeholder="Digite seu e-mail"
+                    required
                   />
+                  <div class="invalid-feedback">Campo e-mail obrigatório!</div>
                 </div>
               </div>
               <div class="form-group row">
                 <label
-                  for="mensagem"
+                  for="validationCustonMsg"
+                  name="mensagem"
                   class="col-sm-2 col-form-label col-form-label-sm"
-                  >Mensagem</label
+                  >Mensagem*</label
                 >
                 <div class="col-sm-10">
                   <textarea
-                    class="form-control form-control-sm"
-                    id="mensagem"
-                    placeholder="Digite sua mensagem"
-                  >
+                    class="form-control"
+                    name="mensagem"
+                    id="validationCustonMsg"
+                    placeholder="Digite sua mensagem..."
+                    required
+                    >
                   </textarea>
-                  <button type="submit" class="btn btn-primary my-1">
-                    Enviar
-                  </button>
+                  <div class="invalid-feedback">Campo mensagem obrigatório!</div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary my-1">
+                      Enviar
+                    </button>
+                  </div>
+                  <div>
+                    <p>* Campos obrigatórios</p>
+
+                  </div>
+                  </div>
                 </div>
               </div>
             </form>
@@ -139,7 +157,7 @@
           <noscript>
             <!-- referência a arquivo externo -->
             <a href="home.html">Home</a>
-        </noscript>
+          </noscript>
         </div>
       </footer>
     </div>

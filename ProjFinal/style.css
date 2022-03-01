@@ -1,7 +1,20 @@
 
 
   body {
-    border: solid #000 1px;
+    border: solid #000 2px; /*verificar a distribuição das repartiçoes*/
     background-image: linear-gradient(180deg, #4fffdc, #3FCCB0, #3d8577, rgb(2, 66, 45));
     background-attachment: fixed;
+  }
+
+  #barraDeAcessibilidade {
+    background-color: #4fffdc;
+    display: none;
+  }
+
+  #logo {
+    background-color: #4fffdc;
+  }
+
+  #nomeEmpresa{
+    background-color: #4fffdc ;
   }
