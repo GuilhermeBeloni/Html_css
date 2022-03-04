@@ -1,9 +1,9 @@
 
 
-  body {
-    border: solid #000 2px; /*verificar a distribuição das repartiçoes*/
+  /*body {
+    border: solid #000 2px; verificar a distribuição das repartiçoes*/
     /*background-image: linear-gradient(180deg, #4fffdc, #3FCCB0, #3d8577, rgb(2, 66, 45));
-    background-attachment: fixed;*/
+    background-attachment: fixed;
   }
 
   #barraDeAcessibilidade {
@@ -17,4 +17,4 @@
 
   #nomeEmpresa{
     background-image: linear-gradient(180deg, #4fffdc, #3FCCB0, #3d8577, rgb(2, 66, 45));
-  }
+  }*/

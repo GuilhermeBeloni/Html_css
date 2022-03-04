@@ -23,7 +23,6 @@
   <body>
     <div class="container mx-auto bg-light mt-1 w-90">
       <header class="row d-flex align-items-center">
-        <!-- oculte a barra de acessibilidade -->
         <div id="barra_acessibilidade" class="col-12">
           <ul id="atalhos">
             <li><a href="#menu" accesskey="1">Ir para menu [1]</a></li>
@@ -33,7 +32,6 @@
           </ul>
         </div>
 
-        <!-- faça com que as duas divs a seguir sejam exibidas lado a lado quando o viewport for maior ou igual a 576px sendo que a primeira deve ocupar 3/12 e a segunda 9/12 consulte: https://getbootstrap.com.br/docs/4.1/layout/grid/ -->
         <div class="col-3">
           <img
             src="imagens/logo-triangulos-coloridos120.png"
@@ -45,17 +43,13 @@
           <h1>Empresa XPTO</h1>
         </div>
       </header>
-      <hr />
+
       <main class="row">
         <section class="col">
           <div>
-            <!-- oculte o header abaixo 
-            consulte https://getbootstrap.com.br/docs/4.1/utilities/display/ -->
             <h2 id="menu">Menu</h2>
           </div>
           <div class="col-sm-flex d-sm-flex justify-content-sm-center">
-            <!-- torne o menu responsivo, conforme o exemplo
-            consulte https://getbootstrap.com.br/docs/4.1/components/navbar/ -->
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
               <button
                 class="navbar-toggler"
@@ -82,7 +76,7 @@
           </div>
           <article class="col-flex">
             <h2 id="formulario">Formulário de Contato</h2>
-            <!-- torne o formulário responsivo, conforme o exemplo consulte https://getbootstrap.com.br/docs/4.1/components/forms/ -->
+
             <form class="needs-validation" novalidate>
               <div class="form-group row">
                 <label
@@ -96,12 +90,16 @@
                     class="form-control form-control-sm"
                     id="validationCuston01"
                     placeholder="Digite seu nome"
-                    required/>
-                    <div class="invalid-feedback">Campo nome obrigatório!</div>
+                    required
+                  />
+                  <div class="invalid-feedback">Campo nome obrigatório!</div>
                 </div>
               </div>
               <div class="form-group row">
-                <label for="validationCuston02" class="col-sm-2 col-form-label col-form-label-sm">E-mail*</label
+                <label
+                  for="validationCuston02"
+                  class="col-sm-2 col-form-label col-form-label-sm"
+                  >E-mail*</label
                 >
                 <div class="col-sm-10">
                   <input
@@ -121,37 +119,28 @@
                   >Mensagem*</label
                 >
                 <div class="col-sm-10">
-                  <textarea
-                    class="form-control"
-                    name="mensagem"
-                    id="validationCustonMsg"
-                    placeholder="Digite sua mensagem..."
-                    required
-                    >
-                  </textarea>
-                  <div class="invalid-feedback">Campo mensagem obrigatório!</div>
+                  <textarea required class="form-control" name="mensagem" id="validationCustonMsg" placeholder="Digite sua mensagem..."></textarea>
+                  <div class="invalid-feedback">
+                    Campo mensagem obrigatório!
+                  </div>
                   <div class="form-group">
                     <button type="submit" class="btn btn-primary my-1">
                       Enviar
                     </button>
                   </div>
-                  <div >* Campos obrigatórios
-                  </div>
-                  <div id="copy" class="col-sm-12">Copyright © 2022
-
-                  </div>
-                  </div>
+                  <div>* Campos obrigatórios</div>
+                  <div id="copy" class="col-sm-12">Copyright © 2022</div>
                 </div>
-              
+              </div>
             </form>
           </article>
         </section>
       </main>
       <footer class="row">
-          <noscript>
-            <!-- referência a arquivo externo -->
-            <a href="home.html">Home</a>
-          </noscript>
+        <noscript>
+          <!-- referência ao arquivo externo -->
+          <a href="home.html">Home</a>
+        </noscript>
       </footer>
     </div>
 

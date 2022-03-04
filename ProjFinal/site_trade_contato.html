@@ -20,9 +20,9 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <header class="row d-flex align-items-center">
-        <div id="barraDeAcessibilidade" class="col">
+        <div id="barraDeAcessibilidade" class="col d-none">
           <ul id="atalhos">
             <li><a href="#menu" accesskey="1">Ir mara menu [1]</a></li>
             <li><a href="#aulas" accesskey="2">Ir para aulas [2]</a></li>
@@ -32,19 +32,19 @@
             </li>
           </ul>
         </div>
-        <div id="logo" class="col-sm-8">
+        <div id="logo" class="col-sm-5 border">
           <img
             src="imagens/chart-4732549_250.png"
             alt="logotipo da empresa com um gráfico"
           />
         </div>
-        <div id="nomeEmpresa" class="col-sm-4">
+        <div id="nomeEmpresa" class="col-sm-7 border pt-3">
           <h1>Trading Zone</h1>
         </div>
       </header>
     </div>
     <main class="row">
-      <section class="col">
+      <section class="col border">
         <div>
           <!-- oculte o header abaixo 
           consulte https://getbootstrap.com.br/docs/4.1/utilities/display/ -->
@@ -53,7 +53,7 @@
         <div class="col-sm-flex d-sm-flex justify-content-sm-center">
           <!-- torne o menu responsivo, conforme o exemplo
           consulte https://getbootstrap.com.br/docs/4.1/components/navbar/ -->
-          <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <nav class="navbar navbar-expand-sm navbar-light bg-light ">
             <button
               class="navbar-toggler"
               type="button"
@@ -83,7 +83,7 @@
             </div>
           </nav>
         </div>
-        <article class="col-flex">
+        <article class="col">
           <h2 id="formulario">Formulário de Contato</h2>
           <!-- torne o formulário responsivo, conforme o exemplo consulte https://getbootstrap.com.br/docs/4.1/components/forms/ -->
           <form action="#" method="post">
