@@ -62,7 +62,7 @@ header, .navbar {
 /* Slider */
 
 .container-fluid {
-    padding: 0;
+    padding: 70px;
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
