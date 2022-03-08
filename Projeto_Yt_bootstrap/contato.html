@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cotação</title>
+    <title>Cadastro</title>
     <link rel="shortcut icon" href="IMG/chart-4732549_50.ico" type="image/x-icon">
     <!--Fonte-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,6 @@
       crossorigin="anonymous"
     />
   </head>
-
   <body>
     <header>
       <div class="container border" id="nav-container">
@@ -60,7 +59,10 @@
               <a class="nav-item nav-link" id="cotacao-menu" href="cotacao.html"
                 >Cotação</a
               >
-              <a class="nav-item nav-link" id="cadastro-menu" href="contato.html"
+              <a
+                class="nav-item nav-link"
+                id="cadastro-menu"
+                href="contato.html"
                 >Cadastro</a
               >
             </div>
@@ -68,64 +70,103 @@
         </nav>
       </div>
     </header>
-    <main>
-      <table class="table">
-        <thead>
-          <tr class="bg-dark text-light">
-            <th scope="col">Ativo</th>
-            <th scope="col">Preço abertura</th>
-            <th scope="col">Preço fechamento</th>
-            <th scope="col">Variação diária</th>
-            <th scope="col">Vol. Financeiro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Winfut</th>
-            <td>120.900</td>
-            <td>122.815</td>
-            <td class="text-success">+1,5%</td>
-            <td>9.9B</td>
-          </tr>
-          <tr>
-            <th scope="row">Wdofut</th>
-            <td>5.2200</td>
-            <td>5.0700</td>
-            <td class="text-danger">-2,87%</td>
-            <td>12.4B</td>
-          </tr>
-          <tr>
-            <th scope="row">Magazine Luiza</th>
-            <td>6.31</td>
-            <td>6.33</td>
-            <td class="text-success">+0,52%</td>
-            <td>644.89M</td>
-          </tr>
-          <tr>
-            <th scope="row">Petrobras</th>
-            <td>34.67</td>
-            <td>34.82</td>
-            <td class="text-success">+0,70%</td>
-            <td>2.38B</td>
-          </tr>
-          <tr>
-            <th scope="row">Ambev</th>
-            <td>14,52</td>
-            <td>14,51</td>
-            <td class="text-danger">-0,10%</td>
-            <td>598.25M</td>
-          </tr>
-        </tbody>
-      </table>
-      <footer class="row">
-        <noscript>
-          <!-- referência ao arquivo externo -->
-          <a href="home.html">Home</a>
-        </noscript>
-        <div id="copy" class="col-sm-12">Copyright © 2022</div>
-      </footer>
+    <main class="container-flex">
+      <section class="col">
+        <!--Prox etapa-->
+        <form class="needs-validation bg-light" novalidate>
+          <div class="form-row m-2">
+            <div class="col-sm">
+              <label for="inputName">Nome*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Digite seu nome completo"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row m-2">
+            <div class="form-group col-sm-6">
+              <label for="inputEmail4">Email*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Digite o e-mail"
+                required
+              />
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="inputPassword4">Senha*</label>
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="Digite a senha"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group col-sm-6 px-3">
+            <label for="inputAddress">Endereço*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Rua Bella"
+              required
+            />
+            <label for="inputNumber" class="py-2">Número*</label>
+            <input type="text" class="form-control" id="inputNumber" placeholder="nº" required>
+          </div>
+          <div class="form-row-sm">
+            <div class="form-group col-sm-6">
+              <label for="inputCity">Cidade*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputCity"
+                placeholder="São paulo"
+                required
+              />
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="inputEstado">Estado*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputEstado"
+                placeholder="SP"
+                required
+              />
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="inputCEP">CEP*</label>
+              <input type="text" class="form-control" id="inputCEP" placeholder="00000-000" required />
+            </div>
+          </div>
+          <div class="mx-3">
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <br>
+          <small class="text-muted">* Campos obrigatórios</small>
+        </form>
+          </div>          
+      </section>
+      
 
 
+
+<div id="copy" class="col-sm-12">Copyright © 2022</div>
+    </main>
+    <footer class="row">
+      <noscript>
+        <!-- referência ao arquivo externo -->
+        <a href="home.html">Home</a>
+      </noscript>
+    </footer>
+
+ 
     <!--Script_fontAwesome-->
     <script
       src="https://kit.fontawesome.com/afaa4f3d45.js"

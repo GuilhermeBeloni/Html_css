@@ -17,6 +17,16 @@ p, li {
 }
 
 
+#studyText {
+    color: #444;
+    font-size: 18px;
+}
+
+
+#copy {
+    text-align: end;
+}
+
 /* Barra navegação */
 header, .navbar {
     background-color: #353D41;
@@ -51,9 +61,9 @@ header, .navbar {
 
 /* Slider */
 
-/*.container-fluid {
+.container-fluid {
     padding: 0;
-}*/
+}
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
     height: 550px;
@@ -98,6 +108,10 @@ header, .navbar {
     background-color: #f9f9f9;
 }
 
+#study-area {
+    background-color: #f9f9f9;
+}
+
 .main-title {
     color: #444;
     margin: 0 0 65px 0;
@@ -133,4 +147,28 @@ header, .navbar {
 #about-list i {
     color: #65daf9;
     margin-right: 15px;
+}
+
+@media(max-width: 768px) {
+    #mainSlider {
+        margin-top: 0;
+    }
+
+    #mainSlider .carousel-caption {
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2 {
+        font-size: 24px;
+        margin-bottom: 100px;
+    }
+
+    .main-title::after {
+        display: none;
+    }
+
+    #imgAl {
+        padding: 50px;
+    }
+
 }
